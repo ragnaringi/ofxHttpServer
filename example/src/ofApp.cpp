@@ -12,7 +12,7 @@ void ofApp::setup(){
 	server = ofxHTTPServer::getServer(); // get the instance of the server
 	server->setServerRoot("www");		 // folder with files to be served
 	server->setUploadDir("upload");		 // folder to save uploaded files
-	server->setCallbackExtension("of");	 // extension of urls that aren't files but will generate a post or get event
+	server->setCallbackExtensions("of");	 // extension of urls that aren't files but will generate a post or get event
 	server->setListener(*this);
 
 	server->start(8888);
