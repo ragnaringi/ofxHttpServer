@@ -7,7 +7,7 @@
 
 
 
-class testApp : public ofBaseApp, public ofxHTTPServerListener{
+class ofApp : public ofBaseApp, public ofxHTTPServerListener{
 
 	public:
 
